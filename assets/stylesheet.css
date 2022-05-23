@@ -174,11 +174,38 @@ h2 {
   margin:0 auto;
 }
 
-.link-footer {
+.link-footer a {
   color: #AC5E64;
-  display:block;
+  display:flex;
   width:260px;
   margin:0 auto;
+}
+
+.footer {
+  background: #F4F4F4;
+  display: block;
+  align-items: center;
+ 
+  /* justify-content: space-between; */
+  height: 140px;
+  padding: 25px 50px;
+  color: rgba(0,0,0,0.3);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 1;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 0.15;
 }
 
 .hand {
@@ -357,6 +384,8 @@ h2 {
   width: 33%;
   transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
 }
+/* #underline */
+
 .tabs .slider .indicator {
   position: relative;
   width: 50px;
@@ -400,11 +429,25 @@ h2 {
 .tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
   cursor: default;
   color: #39475B;
+  background: rgba(0, 0, 0, 0.08);
 }
 .tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label svg {
   fill: #39475B;
 }
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+  cursor: default;
+  color: #39475B;
+  background: rgba(0, 0, 0, 0.08);
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
+  cursor: default;
+  color: #39475B;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+
 @media (max-width: 600px) {
+  /* background 1st tab */
   .tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
     background: rgba(0, 0, 0, 0.08);
   }
@@ -502,7 +545,7 @@ h2 {
 }
 @media (max-width: 600px) {
   .tabs ul li label {
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
   }
   .tabs ul li label span {
