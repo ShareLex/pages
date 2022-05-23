@@ -1,2 +1,2 @@
 # pages
-Sharelex landing page
+Landing page for sharelex.org 
